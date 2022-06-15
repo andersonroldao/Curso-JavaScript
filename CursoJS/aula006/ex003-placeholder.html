@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(105, 105, 173);
+            color: white;
+            text-align: center;
+            font-size: 1.5em ;
+        }
+
+        h1 {
+            color: darkkhaki;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Já me livrei da Maldição</p>
+    <script>
+
+        /* também pode ser escrito como:
+        var n1 = Number.parseInt(window.prompt('Digite um número: ')) ou
+        var n1 = parseFloat(prompt('Digite um número: ')) */
+        var n1 = Number(prompt('Digite um número: '))
+        var n2 = Number(prompt('Digite outro número: '))
+        var s = n1 + n2
+
+        /* também pode ser escrito como:
+        alert('A soma entre ' + n1 + ' e ' + n2 + ' é igual a ' + s) */
+        alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+
+        /* "+" serve tanto para adição quanto para concatenação
+            number + number para adição
+            string + string para concatenação */
+
+        /* usar somente "Number" irá definir o tipo de variável númerica automaticamente */
+
+    </script>
+</body>
+</html>
