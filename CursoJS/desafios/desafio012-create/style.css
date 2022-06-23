@@ -16,6 +16,10 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
 }
 
+div {
+    padding: 8px;
+}
+
 footer {
     font-style: italic;
 }
