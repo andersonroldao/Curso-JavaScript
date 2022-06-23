@@ -8,11 +8,14 @@ function carregar() {
     msg.innerHTML = `Agora são ${relogio}.`
 
     if (hora >= 6 && hora < 12) {
-        img.src='image/fotomanha.png'
+        img.src = 'image/fotomanha.png'
+        document.body.style.background = '#e2cd9f'
     } else if (hora >= 12 && hora < 18) {
-        img.src='image/fototarde.png'
+        img.src = 'image/fototarde.png'
+        document.body.style.background = '#b9846f'
     } else {
-    img.src='image/fotonoite.png'
+        img.src = 'image/fotonoite.png'
+        document.body.style.background = '#515154'
     }
 
     setInterval(carregar, 1)
