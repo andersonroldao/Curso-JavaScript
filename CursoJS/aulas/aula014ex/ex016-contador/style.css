@@ -19,6 +19,10 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
 }
 
+.button {
+    width: 70px;
+}
+
 footer {
     font-style: italic;
     text-align: center;
