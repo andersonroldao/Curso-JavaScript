@@ -15,16 +15,17 @@
     <section>
         <div>
             <p>
-                <label for="">Número:</label>
-                <input type="number" name="numero" id="numero">
-                <input type="button" value="Gerar Tabuada">
+                <label for="numero">Número:</label>
+                <input type="number" name="number" id="number" placeholder="Digite um número aqui!">
+                <input type="button" value="Gerar Tabuada" onclick="calcular()">
             </p>
-
-            <textarea name="textarea" id="textarea" cols="30" rows="10">Digite um número acima</textarea>
         </div>
-
         <div>
-            
+            <p>
+                <select name="select" id="select" size="10">
+                    <option>Digite um número acima</option>
+                </select>
+            </p>
         </div>
     </section>
 
