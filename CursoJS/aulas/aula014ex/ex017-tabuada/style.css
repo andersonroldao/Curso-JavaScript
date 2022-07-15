@@ -20,6 +20,10 @@ div {
     text-align: left;
 }
 
+div select {
+    overflow: hidden;
+}
+
 footer {
     font-style: italic;
 }
