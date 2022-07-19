@@ -5,6 +5,10 @@ body {
     font-size: 1.1em;
 }
 
+h1 {
+    text-align: center;
+}
+
 section {
     background-color: white;
     color: black;
@@ -17,8 +21,10 @@ section {
 
 div select {
     overflow: hidden;
+    width: 150px;
 }
 
 footer {
     font-style: italic;
+    text-align: center;
 }
