@@ -21,6 +21,7 @@ function inLista(n, l) {
 
 function adicionar() {
     let num = document.querySelector('input#num')
+
     if (isNumero(num.value) && !inLista(num.value, valores)) {
     } else {
         window.alert('Digite um número entre 1 e 100')
