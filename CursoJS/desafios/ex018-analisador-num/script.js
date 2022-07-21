@@ -36,12 +36,23 @@ function adicionar(params) {
 
 function finalizar(params) {
     let total = valores.length
-
+    let maior = valores[0]
+    let menor = valores[0]
 
     if (valores.length == 0) {
         alert('Digite um número antes de finalizar!')
     } else {
+        for (let pos in valores) {
+            if (valores[pos] > maior) {
+                maior = valores[pos]
+            }
+            else if (valores[pos] < menor) {
+                menor = valores[pos]
+            }
+        }
         res.innerHTML = ''
         res.innerHTML += `A quantidade de números digitados foi: ${total}`
+        res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
+        res.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`
     }
 }
