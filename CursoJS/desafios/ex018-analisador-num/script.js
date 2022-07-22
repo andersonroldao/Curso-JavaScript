@@ -1,6 +1,7 @@
 let num = document.getElementById('num')
 let lista = document.getElementById('select')
 let res = document.getElementById('res')
+let enter = document.getElementById('enter')
 let valores = []
 
 function isNumero(n) {
@@ -19,25 +20,36 @@ function inLista(n, l) {
     }
 }
 
-function adicionar(params) {
-    if (isNumero(num.value) && !inLista(num.value, valores)) {
-        let item = document.createElement('option')
+document.addEventListener('keypress', function (e) {
+    if (e.key === 13)
+        function adicionar(params) {
 
-        select.appendChild(item)
-        valores.push(Number(num.value))
-        item.text = `Valor ${num.value} adicionado.`
-        res.innerHTML = ''
-    } else {
-        alert('Valor inválido ou duplicado, tente novamente.\n\nDica: Tente um valor entre 1 e 100.')
-    }
-    num.value = ''
-    num.focus()
-}
+            if (isNumero(num.value) && !inLista(num.value, valores)) {
+                let item = document.createElement('option')
+
+                select.appendChild(item)
+                valores.push(Number(num.value))
+                item.text = `Valor ${num.value} adicionado.`
+                res.innerHTML = ''
+
+
+            } else {
+                alert('Valor inválido ou duplicado, tente novamente.\n\nDica: Tente um valor entre 1 e 100.')
+            }
+            num.value = ''
+            num.focus()
+
+        }
+    })
+
 
 function finalizar(params) {
+    /* let maior = valores[0]
+    let menor = valores[0] */
+
+    let maior = Math.max.apply(null, valores);
+    let menor = Math.min.apply(null, valores);
     let total = valores.length
-    let maior = valores[0]
-    let menor = valores[0]
     let soma = 0
     let media = 0
 
@@ -60,6 +72,5 @@ function finalizar(params) {
         res.innerHTML += `<p>Quantidade de números adicionados: ${total}.</p>`
         res.innerHTML += `<p>Maior valor informado: ${maior}.</p>`
         res.innerHTML += `<p>Menor valor informado: ${menor}.</p>`
-
     }
 }
