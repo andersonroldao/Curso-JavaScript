@@ -38,6 +38,8 @@ function finalizar(params) {
     let total = valores.length
     let maior = valores[0]
     let menor = valores[0]
+    let soma = 0
+    let media = 0
 
     if (valores.length == 0) {
         alert('Digite um número antes de finalizar!')
@@ -49,10 +51,15 @@ function finalizar(params) {
             else if (valores[pos] < menor) {
                 menor = valores[pos]
             }
+            soma += valores[pos]
+            media = soma / total
         }
         res.innerHTML = ''
-        res.innerHTML += `A quantidade de números digitados foi: ${total}`
-        res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
-        res.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`
+        res.innerHTML += `<p>Soma dos valores adionados: ${soma}.</p>`
+        res.innerHTML += `<p>Média dos valores adicionados: ${media.toFixed(2)}.</p>`
+        res.innerHTML += `<p>Quantidade de números adicionados: ${total}.</p>`
+        res.innerHTML += `<p>Maior valor informado: ${maior}.</p>`
+        res.innerHTML += `<p>Menor valor informado: ${menor}.</p>`
+
     }
 }
