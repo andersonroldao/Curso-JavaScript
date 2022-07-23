@@ -1,7 +1,6 @@
 let num = document.getElementById('num')
 let lista = document.getElementById('select')
 let res = document.getElementById('res')
-let enter = document.getElementById('enter')
 let valores = []
 
 function isNumero(n) {
@@ -20,28 +19,29 @@ function inLista(n, l) {
     }
 }
 
-document.addEventListener('keypress', function (e) {
-    if (e.key === 13)
-        function adicionar(params) {
+function adicionar(params) {
+    if (isNumero(num.value) && !inLista(num.value, valores)) {
+        let item = document.createElement('option')
 
-            if (isNumero(num.value) && !inLista(num.value, valores)) {
-                let item = document.createElement('option')
-
-                select.appendChild(item)
-                valores.push(Number(num.value))
-                item.text = `Valor ${num.value} adicionado.`
-                res.innerHTML = ''
+        select.appendChild(item)
+        valores.push(Number(num.value))
+        item.text = `Valor ${num.value} adicionado.`
+        res.innerHTML = ''
 
 
-            } else {
-                alert('Valor inválido ou duplicado, tente novamente.\n\nDica: Tente um valor entre 1 e 100.')
-            }
-            num.value = ''
-            num.focus()
+    } else {
+        alert('Valor inválido ou duplicado, tente novamente.\n\nDica: Tente um valor entre 1 e 100.')
+    }
+    num.value = ''
+    num.focus()
+}
 
-        }
-    })
-
+// Adiona o número pela tecla enter e chama a função adionar()
+num.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        adicionar()
+    }
+});
 
 function finalizar(params) {
     /* let maior = valores[0]
