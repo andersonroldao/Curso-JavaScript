@@ -28,7 +28,6 @@ function adicionar(params) {
         item.text = `Valor ${num.value} adicionado.`
         res.innerHTML = ''
 
-
     } else {
         alert('Valor inválido ou duplicado, tente novamente.\n\nDica: Tente um valor entre 1 e 100.')
     }
