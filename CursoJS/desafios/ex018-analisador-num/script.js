@@ -66,9 +66,9 @@ function finalizar(params) {
             media = soma / total
         }
         res.innerHTML = ''
+        res.innerHTML += `<p>Quantidade de números adicionados: ${total}.</p>`
         res.innerHTML += `<p>Soma dos valores adionados: ${soma}.</p>`
         res.innerHTML += `<p>Média dos valores adicionados: ${media.toFixed(2)}.</p>`
-        res.innerHTML += `<p>Quantidade de números adicionados: ${total}.</p>`
         res.innerHTML += `<p>Maior valor informado: ${maior}.</p>`
         res.innerHTML += `<p>Menor valor informado: ${menor}.</p>`
     }
