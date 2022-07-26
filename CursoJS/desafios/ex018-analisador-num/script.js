@@ -19,7 +19,7 @@ function inLista(n, l) {
     }
 }
 
-function adicionar(params) {
+function adicionar() {
     if (isNumero(num.value) && !inLista(num.value, valores)) {
         let item = document.createElement('option')
 
@@ -42,7 +42,7 @@ num.addEventListener('keypress', function (e) {
     }
 });
 
-function finalizar(params) {
+function finalizar() {
     /* let maior = valores[0]
     let menor = valores[0] */
 
