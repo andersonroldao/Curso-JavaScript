@@ -1,9 +1,11 @@
+// for
 for (let i = 5; i >= 1; i--) { // conta os números impares de 5 a 1
     if (i % 2 !== 0) {
         console.log(i);
     }
 }
 
+// while
 let i = 5;
 while (i >= 1) { // conta os números impares de 5 a 1
     if (i % 2 !== 0) {
@@ -12,6 +14,7 @@ while (i >= 1) { // conta os números impares de 5 a 1
     i--;
 }
 
+//do-while
 // executa pelo menos uma vez antes de verificar a condição
 let index = 1;
 
