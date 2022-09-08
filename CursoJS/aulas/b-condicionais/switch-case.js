@@ -10,7 +10,7 @@ switch (permissao) {
         console.log('Usuário gerente');
         break;
 
-    case 'diretor': 
+    case 'diretor':
         console.log('Usuário diretor');
         break;
 
