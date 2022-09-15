@@ -4,7 +4,7 @@ const pessoa = {
 };
 
 for (const key in pessoa) {
-    console.log(key, pessoa.nome);
+    console.log(key, pessoa[key]);
 }
 
 const cores = ['Vermelho', 'Azul', 'Verde'];
