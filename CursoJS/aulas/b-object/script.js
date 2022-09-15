@@ -1,4 +1,4 @@
-let pessoa = {
+const pessoa = {
     nome: 'Anderson',
     idade: 25,
     estaAprovado: true,
@@ -6,3 +6,11 @@ let pessoa = {
 };
 
 console.log(pessoa.nome, pessoa.idade, pessoa.estaAprovado, pessoa.sobrenome);
+
+// Para exibir todas propiedades.
+const propriedades = Object.keys(pessoa);
+console.log(propriedades);
+
+for (const key in pessoa) {
+    console.log(pessoa[key]);
+}
