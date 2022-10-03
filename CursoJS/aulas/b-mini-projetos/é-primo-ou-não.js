@@ -6,7 +6,7 @@ function exibirNumPrimo(numero) {
         (numero !== 5 && numero % 5 === 0) ||
         (numero !== 3 && numero % 3 === 0) ||
         (numero !== 2 && numero % 2 === 0) ||
-        (numero === 0 || numero === 1)) {
+        (numero === 1 || numero === 0)) {
         console.log(`O número ${numero} não é primo!`);
     } else {
         console.log(`O número ${numero} é primo!`);
