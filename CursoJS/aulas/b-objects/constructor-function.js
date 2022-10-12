@@ -1,9 +1,9 @@
 // PascalCase - UmDoisTresQuatro
-function Celular (marcaCelular, modeloCelular, tamanhoTela, CapacidadeBateria) {
+function Celular(marcaCelular, modeloCelular, tamanhoTela, CapacidadeBateria) {
     this.marcaCelular = marcaCelular,
-    this.modeloCelular = modeloCelular,
-    this.tamanhoTela = tamanhoTela,
-    this.CapacidadeBateria = CapacidadeBateria
+        this.modeloCelular = modeloCelular,
+        this.tamanhoTela = tamanhoTela,
+        this.CapacidadeBateria = CapacidadeBateria
     this.ligar = function ligar() {
         console.log("Fazendo ligação...");
     }
