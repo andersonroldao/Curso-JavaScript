@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+</head>
+<body>
+    <script>
+        let CorFavorita = prompt('Olá, qual é a susa cor preferida?');
+
+        /* não é a meneira mais eficiente de verificar palavras no masculino e feminino, ou
+        palavras com letras maiúsculas e minúsculas. */
+        if (CorFavorita == 'Vermelho' ||
+            CorFavorita == 'vermelho' ||
+            CorFavorita == 'Vermelha' ||
+            CorFavorita == 'vermelha') {
+            alert('Essa é a minha cor favorita também!');
+        }
+    </script>
+</body>
+</html>
