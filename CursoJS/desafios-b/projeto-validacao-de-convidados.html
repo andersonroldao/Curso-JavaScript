@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Virtual</title>
+</head>
+<body>
+    <header>
+        <H1>Festa VIP</H1>
+    </header>
+    <main>
+        <form id="form">
+            <div>
+                <h2><label for="name">Bem vindo a festa senhor(a):</label></h2>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome">
+            </div>
+            <div>
+                <h2><label for="convidadoPor">Quem te convidou para a festa?</label></h2>
+                <input type="text" name="convidadoPor" id="convidadoPor" placeholder="Quem te convidou?">
+                <input type="button" value="Verificar se posso entrar" onclick="verificarAutenticidade()">
+            </div>
+            <div>
+                <h2>Você está permitido a entrar?</h2>
+                <p id="pesquisando">Pesquisando...</p>
+            </div>
+        </form>
+    </main>
+
+    <script>
+        const convidadoPor = document.getElementById('convidadoPor');
+        const pesquisando = document.getElementById('pesquisando');
+
+        function verificarAutenticidade() {
+            NomeConvidado = document.getElementById('name').value;
+            ConvidadosJoao = ['Carla', 'Daiana', 'Fernanda', 'Julia', 'Maria', 'Mariana', 'Virginia'];
+
+            if (ConvidadosJoao.includes(NomeConvidado)) {
+                pesquisando.innerHTML = `Você pode entrar!`
+            } else {
+                pesquisando.innerHTML = `Você não pode entrar!`
+            }
+        }
+    </script>
+</body>
+</html>
