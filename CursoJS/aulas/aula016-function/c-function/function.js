@@ -5,7 +5,6 @@ function escreva() {
 escreva();
 
 
-
 const msg = escrevaMensagem('Hello, World!');
 const msg1 = escrevaMensagem('Tudo numa boa?');
 
@@ -15,7 +14,6 @@ function escrevaMensagem(mensagem) {
 
 console.log(`${msg}
 ${msg1}`);
-
 
 
 const resultadoSoma = soma(5, 7);
@@ -40,17 +38,3 @@ function somaTudo(numeros) {
 }
 
 console.log(resultado);
-
-
-// Parâmetro rest...
-function escrevaEndereco(rua, cidade, pais, ...complementos) {
-    console.log(`${rua}, ${cidade}, ${pais}, ${complementos}`);
-}
-
-escrevaEndereco('rua josé de alencar', 'Rio Grande', 'Brasil', 'casa 2', ' fundos', ' CEP: 90028220');
-
-
-// Funções auto-invocáveis
-(function autoExecuta(nome) {
-    console.log('Executou', nome);
-}('Carlos'));
