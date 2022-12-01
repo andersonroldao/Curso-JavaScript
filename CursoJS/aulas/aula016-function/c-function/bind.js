@@ -7,5 +7,5 @@ const personagemThis = {
     nome: 'Anderson'
 }
 
-const bind1 = personagem.bind(personagemThis, 'param2', 123, ['array1', 0, 1, 3]);
-bind1();
+const bind1 = personagem.bind(personagemThis, 'param2', ['array1', 0, 1, 3]);
+bind1(123);
