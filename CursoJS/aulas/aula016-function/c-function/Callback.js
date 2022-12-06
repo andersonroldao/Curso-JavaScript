@@ -11,3 +11,6 @@ console.log(somaCallback(10, 3, multiplica));
 console.log(somaCallback(5, 2, function (total) {
     return total + 20;
 }));
+console.log(somaCallback(23, 14, function (total) {
+    return total / 2;
+}));
