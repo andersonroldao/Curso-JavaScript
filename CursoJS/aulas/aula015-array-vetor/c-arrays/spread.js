@@ -7,14 +7,23 @@ const user = [
     'Brasileiro'
 ];
 
-// Spread unifica os arrays
+/* // Spread unifica os arrays
 console.log([arr1, arr2]);
 console.log([...arr1, ...arr2, ...['ciclano', 'beltrano']]);
 
 var nome = user[0];
 var idade = user[1];
-var ano = user[3]
+var ano = user[3];
+
 console.log(nome, idade, ano);
 
 var [nome, idade, ano] = user;
-console.log(nome, idade, ano);
+
+console.log(nome, idade, ano); */
+
+const newUser = {
+    ...arr1,
+    ...arr2
+};
+
+console.log(newUser);
